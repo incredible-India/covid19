@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Covid-19 Dashboard</title>
+    <meta name="description" content="covid-19 dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/cs/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container-fluid shadow">
+        <h2 class="text-center">COVID 19 DASHBOARD</h2>
+
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <div class="card-counter success">
+                    <!-- <i class="fa fa-code-fork"></i> -->
+
+                    <h5 class="text-center">Active Cases</h5>
+                    <p class="text-center" id="active"></p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter primary">
+                    <!-- <i class="fa fa-ticket"></i> -->
+                    <h5 class="text-center">Confirmed Cases</h5>
+                    <p class="text-center" id="confirmed"></p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter info">
+                    <!-- <i class="fa fa-database"></i> -->
+                    <h5 class="text-center">Recovered Cases</h5>
+                    <p class="text-center" id="recovered"></p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card-counter danger">
+                    <!-- <i class="fa fa-users"></i> -->
+                    <h5 class="text-center">Deaths</h5>
+                    <p class="text-center" id="deaths"></p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="">
+
+                <canvas id="myChart"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="assets/js/index.js" async defer></script>
+</body>
+
+</html>
