@@ -12,6 +12,7 @@
     <meta name="description" content="covid-19 dashboard">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/cs/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -61,15 +62,54 @@
 
         </div>
 
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="container chart" >
+      
 
-                <canvas id="myChart"></canvas>
-            </div>
+                <canvas id="myChart" width="300px" height="400px" ></canvas>
+
 
         </div>
     </div>
 
+    <!-- source of information  -->
+
+
+    <div class="container">
+
+        <marquee behavior="scroll" direction="left" scrollamount="10">The following data has been taken from covid19.org. For more information visit this site. </marquee>
+    </div>
+
+    <!-- Stopping the spread starts with you  -->
+
+    <div class="container precaution" >
+
+        <div class="myimg">
+            <img src="./assets/svg/prec.svg" alt="" class="img-fluid" style="width: 210px; height: 210px; border-radius: 50%;">
+        </div>
+
+        <div class="infoHeading">
+            <h1>Stopping the <i class="spec">spread</i> starts with you</h1>
+        </div>
+
+        <div class="infoPara">
+            <h3>Wear a <i class="spec"> mask </i>.
+              </h3>
+
+              <h3>  Clean your <i class="spec"> hands </i>.
+               </h3>
+               <h3> Maintain safe <i class="spec"> distance </i>.
+               </h3>
+               <h3>
+                Get <i class="spec"> vaccinated </i>
+               </h3>
+        </div>
+
+    </div>
+
+    <!-- india map  -->
+ <div class="container geoMap">
+    <div id="regions_div" style="display: flex; justify-content: center; align-items: center;"></div>
+ </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

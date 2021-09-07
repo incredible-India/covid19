@@ -1,3 +1,4 @@
+
 .card-counter {
     box-shadow: 2px 2px 10px #DADADA;
     margin: 5px;
@@ -41,11 +42,7 @@
     font-weight: bold;
 }
 
-#myChart {
 
-    width: 50%;
-    height: 80%;
-}
 
 /**==============for ipad view========================**/
 @media (min-width:600px) {
@@ -109,3 +106,65 @@
 
 
 }
+
+
+/* Chart  */
+
+
+.chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
+
+/* i tag  */
+.spec{
+    color: #007bff;
+}
+
+/* precaution  */
+
+.precaution{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoPara{
+    text-align: center;
+}
+
+/* scroll bar  */
+::-webkit-scrollbar{
+
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    
+    background-image: linear-gradient(#007bff,#ef5350,#66bb6a,#26c6da);
+   
+      border-radius: 20px;
+  }
+
+
+
+  /* map  */
+  .geoMap{
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      overflow-x: auto;
+      width: 100%;
+      height: 600px;
+  }
+
+  #regions_div{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    overflow-x: auto;
+  }
